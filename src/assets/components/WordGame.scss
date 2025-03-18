@@ -1,0 +1,70 @@
+
+
+$m-color: rgb(50, 50, 150);
+$hv-color: rgb(1, 7, 87);
+$bdr-color: #aaaaaa;
+$t-color:#818181;
+
+
+$fs-large: 32px;
+$fs-medium: 24px;
+$fs-small: 16px;
+$bdr-radius: 5px;
+$pd-small: 10px;
+$pd-default: 20px;
+$mg-default: 20px;
+
+.game-container {
+    background-color: #fff;
+    padding: $pd-default;
+    border-radius: $bdr-radius;
+    box-shadow: 0 0 10px #0000001f;
+    text-align: center;
+
+    h2 {
+        font-size: $fs-medium;
+        color: $m-color
+    }
+    h2:hover {
+        color: $hv-color;
+        cursor: pointer;
+    }
+    .current-word {
+        font-size: $fs-large;
+        font-weight: bold;
+        color: $t-color;
+        padding: $pd-small 0;
+    }
+    input {
+        width: 200px;
+        padding: $pd-small;
+        border: 2px solid $bdr-color;
+        border-radius: $bdr-radius;
+        transition: border .3s;
+        outline: none;
+        &:focus {
+            border-color: $m-color;
+        }
+    }
+    button {
+        margin-left: 10px;
+        border: none;
+        padding: $pd-small $pd-small*2;
+        font-size: $fs-small;
+        background-color: $m-color;
+        color: #fff;
+        border-radius: $bdr-radius;
+        cursor: pointer;
+        transition: background .3s;
+        &:hover {
+            background-color: $hv-color;
+        }
+    }
+    .message {
+        margin-top: $mg-default;
+        font-size: $fs-small;
+        color: $t-color;
+    }
+
+}
+
